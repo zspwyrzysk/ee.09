@@ -1,0 +1,18 @@
+<section id="banner">
+  <h2>Galeria miejsc ciekawych</h2>
+</section>
+<section id="main">
+  <img src='../../assets/images/{{current_image}}' alt="Galeria">
+</section>
+
+<section id="banner_left">
+  <h3>Przegląd zdjęć</h3>
+  <img (click)="changeImg(0)" src="../../assets/images/lanzarotte.jpg" alt="lanzarotte">
+  <img (click)="changeImg(1)"src="../../assets/images/pekin.jpg" alt="pekin">
+  <img (click)="changeImg(2)" src="../../assets/images/serengeti.jpg" alt="serengeti">
+  <img (click)="changeImg(3)" src="../../assets/images/wenecja.jpg" alt="wenecja">
+  <img (click)="changeImg(4)" src="../../assets/images/tajlandia.jpg" alt="tajlandia">
+</section>
+
+<app-panel-right></app-panel-right>
+<app-footer></app-footer>
