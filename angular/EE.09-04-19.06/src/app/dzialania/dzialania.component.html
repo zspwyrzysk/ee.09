@@ -1,0 +1,13 @@
+<section id="lewy">
+    <h3>Proste działania</h3>
+    <form (ngSubmit)="onSubmit(form1)" #form1="ngForm">
+        <label for="a">liczba A </label> <input type="number" id="a" name="a" ngModel required><br>
+        <label for="b">liczba B </label> <input type="number" id="b" name="b" ngModel required><br>
+        <input type="submit" name="o1" value="+" ngModel>
+        <input type="submit" name="o2" value="-" ngModel>
+        <input type="submit" name="o3" value="*" ngModel>
+        <input type="submit" name="o4" value="/" ngModel>
+        <input type="submit" name="o5" value="^" ngModel>
+    </form>
+    <div id="result">{{result}}</div>
+</section>
