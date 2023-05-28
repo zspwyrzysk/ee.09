@@ -18,14 +18,14 @@
     float: left;
 }
 
-#left_block {
+#block-left {
     background-color:  #808080;
     width: 30%;
     height: 450px;
     float: left;
 }
 
-#right_block {
+#block-right {
     background-color:  #808080;
     width: 70%;
     height: 450px;

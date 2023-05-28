@@ -1,20 +1,4 @@
-<section id="banner1">
-    <h2>Poznaj Ciągi Liczbowe</h2>
-</section>
-
-<section id="banner2">
-    <a href="liczby.html"><h5>Ciągi arytmetyczne</h5></a>
-</section>
-
-<section id="banner3">
-    <a href="fib.html"><h5>Ciąg Fibonacciego</h5></a>
-</section>
-
-<section id="banner4">
-    <img src="obraz1.png" alt="Fibonacci">
-</section>
-
-<section id="left_block">
+<section id="block-left">
     <ol>
         <li>ciągi arytmetyczne</li>
         <li>ciągi geometryczne</li>
@@ -22,18 +6,17 @@
     </ol>
 </section>
 
-<section id="right_block">
+<section id="block-right">
     <h2>Generowanie ciągu arytmetycznego</h2>
-    Pierwszy wyraz A1:
-    <input type="number" name="wyraz" id="wyraz"> <br>
-    Różnica ciągu R:
-    <input type="number" name="roznica" id="roznica"> <br>
-    Liczba wyrazów w ciągu N:
-    <input type="number" name="ilosc" id="ilosc"> <br>
-    <input type="button" name="guzik" id="guzik" value="Generuj Ciąg" onclick="ciag()">
-    <span id="wynik"></span>
-</section>
-
-<section id="footer">
-    <p>Autor: 101010101001010101</p>
+    <form (ngSubmit)="onSubmit(form1)" #form1="ngForm">
+        <label for="a1">wyraz A1:</label>
+        <input type="number" id="wyraz" name="a1" ngModel required> <br>
+        <label for="r">Różnica ciągu R: </label>
+        <input type="number" id="roznica" name="r" ngModel required> <br>
+        <label for="n">Liczba wyrazów w ciągu N: </label>
+        <input type="number" id="ilosc" name="n" ngModel required> <br>
+        <input type="submit" id="guzik" value="Generuj Ciąg">
+    </form>
+    <br>
+    <span id="wynik">{{ message }}</span>
 </section>
