@@ -1,0 +1,33 @@
+body {
+    font-family: Arial;
+}
+table , td {
+    border: 1px solid rgb(255, 127, 80);
+    text-align: center;
+    margin: 10px;
+}
+a {
+    color: white;
+}
+#container-left , #container-right
+{
+    background-color: rgb(255, 127, 80);
+    color: white;
+    width: 50%;
+    height: 410px;
+    float: left;
+}
+#banner , #main
+{
+    background-color:rgb(220, 220, 220);
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
+#footer-left , #footer-right {
+    background-color: rgb(255, 127, 80);
+    color: white;
+    width: 50%;
+    height: 100px;
+    float: left;
+}

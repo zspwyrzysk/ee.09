@@ -1,0 +1,14 @@
+<div id="container-right">
+    <img src="../../assets/samochod.png" alt="grafika: samochód">
+</div>
+<div id="main">
+    <h2>Oblicz, ile litrów musisz zatankowa</h2>
+    <form (ngSubmit)="onSubmit(form1)" #form1="ngForm">
+        <label for="dystans">dystans do przejechania w km:</label><br>
+        <input type="number" name="dystans" id="dystans" ngModel required><br>
+        <label for="spalanie">spalanie samochodu w l/100km:</label><br>
+        <input type="number" id="spalanie" name="spalanie" ngModel required><br>
+        <input type="submit" value="Oblicz">
+    </form>
+    {{ message }}
+</div>
