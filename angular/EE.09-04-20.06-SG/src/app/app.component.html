@@ -1,0 +1,26 @@
+<section id="container-left">
+    <section id="left-one">
+        <h2>W ofercie</h2>
+        <ul>
+            <li><a [routerLink]="['/twarz']">Zabiegi na twarz</a>
+                <ol>
+                    <li>Piling</li>
+                    <li>Maska</li>
+                    <li>Regulacja brwi</li>
+                </ol>
+            </li>
+            <li>Masaż</li>
+            <li>Diety oczyszczające</li>
+        </ul>
+        <a [routerLink]="['/']">Odnośnik do strony głównej</a>
+    </section>
+    <section id="left-two">
+        <img src="../assets/obraz1.jpg" alt="Kosmetycznka">
+    </section>
+</section>
+<div class="outer-outlet">
+  <router-outlet></router-outlet>
+</div>
+<section id="footer">
+    <p>Autor: 2348756384756</p>
+</section>

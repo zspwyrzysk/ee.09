@@ -1,0 +1,17 @@
+<section id="container-right">
+    <section id="right-one">
+        <h1>Salon kosmetyczny</h1>
+    </section>
+    <section id="right-two">
+        <h2>Sprawdź cenę swoje wizyty</h2>
+        <form (ngSubmit)="onSubmit(form1)" #form1="ngForm">
+            <input type="checkbox" name="piling" id="piling" ngModel required> Piling<br>
+            <input type="checkbox" name="maska" id="maska" ngModel required> Maska<br>
+            <input type="checkbox" name="masaz_twarzy" id="masaz_twarzy" ngModel required> Masaż twarzy<br>
+            <input type="checkbox" name="regulacja_brwi" id="regulacja_brwi" ngModel required> Regulacja brwi<br>
+            <input type="submit" value="Sprawdź cenę">
+        </form>
+        <!-- Wynik działania skryptu -->
+        <div>{{ result }}</div>
+    </section>
+</section>
