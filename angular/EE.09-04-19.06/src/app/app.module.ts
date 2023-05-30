@@ -7,12 +7,14 @@ import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MnozenieComponent } from './mnozenie/mnozenie.component';
 import { DzialaniaComponent } from './dzialania/dzialania.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MnozenieComponent,
-    DzialaniaComponent
+    DzialaniaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
