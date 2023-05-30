@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +7,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   @Input()
-  parent_variable: string = "";
+  author: string = "";
+  message: string = "Hello from child";
+  
+  @Output()
+  zmiennaEksportujaca = new EventEmitter();
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.message = 'asdf';
+    this.eksport();
+  }
+  eksport() {
+    this.zmiennaEksportujaca.emit(this.message);
+  }
 }

@@ -6,7 +6,8 @@ import { NgForm } from '@angular/forms';
   templateUrl: './dzialania.component.html',
   styleUrls: ['./dzialania.component.css']
 })
-export class DzialaniaComponent implements OnInit{
+export class DzialaniaComponent implements OnInit {
+  
   result: number;
   operator: string;
   message: string;
@@ -33,7 +34,8 @@ export class DzialaniaComponent implements OnInit{
     console.log(this.result);
     this.message = `Wynik: ${this.result}`;
   }
-  
+
   ngOnInit() {
   }
+  
 }

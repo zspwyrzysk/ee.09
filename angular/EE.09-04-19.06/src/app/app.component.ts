@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -8,5 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'EE.09-04-19.06';
-  parent_variable = "parent to child export";
+  author = "John Doe";
+  
+  // import(odebranaZmienna) {
+	// 	console.log(odebranaZmienna);
+	// }
 }
