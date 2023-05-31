@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DzialaniaComponent } from './dzialania/dzialania.component'
-import { MnozenieComponent } from './mnozenie/mnozenie.component'
+import { DzialaniaComponent } from './components/dzialania/dzialania.component';
+import { MnozenieComponent } from './components/mnozenie/mnozenie.component';
 
 const routes: Routes = [
   { path: '', component: DzialaniaComponent },

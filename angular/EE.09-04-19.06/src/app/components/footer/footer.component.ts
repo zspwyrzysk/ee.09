@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { DataConfig } from '../interfaces/data-config';
+import { DataConfig } from '../../interfaces/data-config';
 
 
 @Component({

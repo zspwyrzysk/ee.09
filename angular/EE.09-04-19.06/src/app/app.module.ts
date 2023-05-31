@@ -5,9 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { MnozenieComponent } from './mnozenie/mnozenie.component';
-import { DzialaniaComponent } from './dzialania/dzialania.component';
-import { FooterComponent } from './footer/footer.component';
+import { MnozenieComponent } from './components/mnozenie/mnozenie.component';
+import { DzialaniaComponent } from './components/dzialania/dzialania.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
