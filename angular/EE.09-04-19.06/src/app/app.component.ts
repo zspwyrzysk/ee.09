@@ -1,6 +1,6 @@
 import { Component, ChangeDetectorRef, AfterContentChecked } from '@angular/core';
 import { MnozenieComponent } from './mnozenie/mnozenie.component';
-import { DataConfig } from './footer/footer.component';
+import { DataConfig } from './interfaces/data-config';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +25,7 @@ export class AppComponent implements AfterContentChecked {
   }
   //zmienna z footer
   onOutletLoaded(component: { MyData: object; }) {
-    console.log(component);
+    //console.log(component);
     if (component instanceof MnozenieComponent) {
       component.MyData = this.MyData;
     }

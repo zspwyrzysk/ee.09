@@ -1,9 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { DataConfig } from '../interfaces/data-config';
 
-export interface DataConfig {
-  message: string;
-  status: number;
-}
 
 @Component({
   selector: 'app-footer',
