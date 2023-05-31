@@ -1,5 +1,6 @@
 import { Component, ChangeDetectorRef, AfterContentChecked } from '@angular/core';
 import { MnozenieComponent } from './mnozenie/mnozenie.component';
+import { DataConfig } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,8 @@ import { MnozenieComponent } from './mnozenie/mnozenie.component';
 })
 export class AppComponent implements AfterContentChecked {
   title: string = 'EE.09-04-19.06';
-  author = "John Doe";
-  MyData = { message: "", status: 0 };
+  author = `John Doe from parent ${this.constructor.name}`;
+  MyData: DataConfig = {message: "", status: 0};
   public constructor(private changeDetector: ChangeDetectorRef) {
 
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DataConfig } from '../footer/footer.component'
 
 @Component({
   selector: 'app-mnozenie',
@@ -7,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MnozenieComponent implements OnInit {
   @Input()
-  MyData = {message: "", status: 0};
+  MyData: DataConfig = {message: "", status: 0};
   public constructor() {}
   
   

@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
-interface SquareConfig {
+export interface DataConfig {
   message: string;
-  width: number;
+  status: number;
 }
 
 @Component({
@@ -14,17 +14,16 @@ export class FooterComponent implements OnInit {
   
   //zmienna from child component footer
   @Input()
-  author: string = "No author";
+  author: string | undefined;
   message: string | undefined;
-
-  MyData = {message: "", status: 0};
-  
+  MyData: DataConfig | undefined;
+  constructor() {}
   
   @Output()
   zmiennaEksportujaca = new EventEmitter();
 
   ngOnInit() {
-    this.message = `message form ${this.constructor.name}`;
+    this.message = `message form child ${this.constructor.name}`;
     this.MyData = {message: this.message, status: 200};
     this.eksport();
   }
