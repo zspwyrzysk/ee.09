@@ -1,19 +1,19 @@
-  <section id="baner1">
+  <section id="banner1">
       <img src="../assets/logo.jpg" alt="matematyka">
   </section>
-  <section id="baner2">
+  <section id="banner2">
       <h1>Pomocnik matematyczny</h1>
   </section>
-  <section id="baner3">
+  <section id="banner3">
     <a [routerLink]="['/']"><h3>Działania</h3></a>
   </section>  
-  <section id="baner4">
+  <section id="banner4">
       <a [routerLink]="['/mnozenie']"><h4>Tabliczka mnożenia</h4></a>
   </section>
   <div class="outer-outlet">
-      <router-outlet></router-outlet>
+      <router-outlet (activate)="onOutletLoaded($event)"></router-outlet>
   </div>
-  <section id="prawy">
+  <section id="container-right">
     <ul>
         <li>dodawanie</li>
         <li>odejmowanie</li>
@@ -21,7 +21,7 @@
         <li>dzielenie</li>
         <li>potęgowanie</li>
     </ul>
-    {{ footer_message }}
+    {{ constructor.name }}: {{ footer_message }}
   </section>
   <app-footer [author]="author" (zmiennaEksportujaca)="import($event)"></app-footer>
   

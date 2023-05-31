@@ -6,15 +6,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  //zmienna from child component footer
   @Input()
-  author: string = "";
-  message: string = "Hello from child";
+  author: string = "No author";
+  message: string | undefined;
   
   @Output()
   zmiennaEksportujaca = new EventEmitter();
 
   ngOnInit() {
-    this.message = 'Zmienna z componentu footer';
+    this.message = `message form ${this.constructor.name}`;
     this.eksport();
   }
   eksport() {
