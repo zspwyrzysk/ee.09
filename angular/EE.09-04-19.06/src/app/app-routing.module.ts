@@ -6,6 +6,7 @@ import { MnozenieComponent } from './components/container-left/mnozenie/mnozenie
 
 const routes: Routes = [
   { path: '', component: DzialaniaComponent },
+  { path: 'dzialania', component: DzialaniaComponent },
   { path: 'mnozenie', component: MnozenieComponent }
 ];
 

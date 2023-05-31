@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { DataConfig } from '../../../interfaces/data-config';
 
 @Component({
   selector: 'app-dzialania',
@@ -11,7 +12,8 @@ export class DzialaniaComponent implements OnInit {
   result: number;
   operator: string;
   message: string;
-
+  @Input()
+  MyData: DataConfig = {message: "", status: 0};
   constructor() {
     this.result = 0;
     this.message = '';

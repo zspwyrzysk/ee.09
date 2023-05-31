@@ -1,14 +1,17 @@
-<clr-main-container>
+
+
   <app-nav [MyData]="MyData"></app-nav>
   <div class="content-container">
-    <main class="content-area">
-      ...
-    </main>
-    <nav class="sidenav" [clr-nav-level]="2">
-      ...
-    </nav>
+    <div class="content-area">
+      <div class="outer-outlet">
+        <router-outlet (activate)="onOutletLoaded($event)"></router-outlet>
+      </div>
+      <app-container-right [MyData]="MyData"></app-container-right>
+    </div>
   </div>
-</clr-main-container>
-  
-  <app-container-right [MyData]="MyData"></app-container-right>
   <app-footer [author]="author" (zmiennaEksportujaca)="import($event)"></app-footer>
+
+
+  
+  
+  

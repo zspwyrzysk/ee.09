@@ -1,28 +1,17 @@
-<!-- <section id="banner1">
-    <img src="../assets/logo.jpg" alt="matematyka">
-</section>
-<section id="banner2">
-    <h1>Pomocnik matematyczny</h1>
-</section>
-<section id="banner3">
-    <a [routerLink]="['/']"><h3>Działania</h3></a>
-</section>  
-<section id="banner4">
-    <a [routerLink]="['/mnozenie']"><h4>Tabliczka mnożenia</h4></a>
-</section>
-<div class="outer-outlet">
-    <router-outlet (activate)="onOutletLoaded($event)"></router-outlet>
-</div> -->
+<header class="header-6">
+    <div class="branding">
+        <a [routerLink]="['/']" class="nav-link">
+            <img src="../assets/logo.jpg" alt="logo" style="height: 50px; margin-right: 20px">
+            <span class="title">Pomocnik Matematyczny</span>
+        </a>
+    </div>
+    <div class="header-nav">
+        <a [routerLink]="['/dzialania']" routerLinkActive="active" class="nav-link" [routerLinkActiveOptions]="{exact:true}" aria-current="page"><span class="nav-text">Działania</span></a>
+        <a [routerLink]="['/mnozenie']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="nav-link"><span class="nav-text">Tabliczka mnożenia</span></a>
+    </div>
+</header>
 
 
-    <clr-header>
-        <clr-header>
-            ...
-            <div class="header-nav" [clr-nav-level]="1">
-              ...
-            </div>
-            ...
-          </clr-header>
 
 
 
