@@ -1,5 +1,4 @@
 import { Component, ChangeDetectorRef, AfterContentChecked } from '@angular/core';
-import { MnozenieComponent } from './components/container-left/mnozenie/mnozenie.component';
 import { DataConfig } from './interfaces/data-config';
 
 @Component({

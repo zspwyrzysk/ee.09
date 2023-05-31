@@ -10,14 +10,17 @@ import { ContainerRightComponent } from './container-right/container-right.compo
 import { MnozenieComponent } from './container-left/mnozenie/mnozenie.component';
 import { DzialaniaComponent } from './container-left/dzialania/dzialania.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContainerLeftComponent } from './container-left/container-left.component';
 
 @NgModule({
   declarations: [
     NavComponent,
+    ContainerLeftComponent,
     ContainerRightComponent,
     MnozenieComponent,
     DzialaniaComponent,
-    FooterComponent
+    FooterComponent,
+    ContainerLeftComponent
   ],
   imports: [
     CommonModule,
@@ -27,6 +30,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   exports: [
     NavComponent,
+    ContainerLeftComponent,
     ContainerRightComponent,
     MnozenieComponent,
     DzialaniaComponent,
