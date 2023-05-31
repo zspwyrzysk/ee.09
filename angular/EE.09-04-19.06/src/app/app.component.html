@@ -1,13 +1,4 @@
-  <app-nav></app-nav>
-  <section id="banner3">
-    <a [routerLink]="['/']"><h3>Działania</h3></a>
-  </section>  
-  <section id="banner4">
-      <a [routerLink]="['/mnozenie']"><h4>Tabliczka mnożenia</h4></a>
-  </section>
-  <div class="outer-outlet">
-    <router-outlet (activate)="onOutletLoaded($event)"></router-outlet>
-  </div>
-  <app-container-right></app-container-right>
+  <app-nav [MyData]="MyData"></app-nav>
+  <app-container-right [MyData]="MyData"></app-container-right>
   <app-footer [author]="author" (zmiennaEksportujaca)="import($event)"></app-footer>
   

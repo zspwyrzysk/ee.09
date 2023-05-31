@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DataConfig } from '../../interfaces/data-config';
+import { DataConfig } from '../../../interfaces/data-config';
 
 @Component({
   selector: 'app-mnozenie',
