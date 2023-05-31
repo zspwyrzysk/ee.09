@@ -4,8 +4,11 @@ import { AppRoutingModule } from '../app-routing.module';
 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ClarityModule } from "@clr/angular";
+//import { CdsModule } from '@cds/angular';
 
-import { NavComponent } from './nav/nav.component';
+import { NavComponent } from './container-top/nav/nav.component';
 import { ContainerRightComponent } from './container-right/container-right.component';
 import { MnozenieComponent } from './container-left/mnozenie/mnozenie.component';
 import { DzialaniaComponent } from './container-left/dzialania/dzialania.component';
@@ -27,6 +30,9 @@ import { ContainerLeftComponent } from './container-left/container-left.componen
     FormsModule,
     AppRoutingModule,
     BrowserModule,
+    BrowserAnimationsModule,
+    ClarityModule,
+    //CdsModule,
   ],
   exports: [
     NavComponent,
