@@ -9,8 +9,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title: string = 'EE.09-04-19.06';
   author = "John Doe";
+  app_var: string = "";
   
-  // import(odebranaZmienna) {
-	// 	console.log(odebranaZmienna);
-	// }
+  import(odebranaZmienna: any) {
+    this.app_var = odebranaZmienna;
+	 	console.log(odebranaZmienna);
+	}
 }

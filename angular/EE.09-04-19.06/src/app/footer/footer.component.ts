@@ -14,7 +14,7 @@ export class FooterComponent implements OnInit {
   zmiennaEksportujaca = new EventEmitter();
 
   ngOnInit() {
-    this.message = 'asdf';
+    this.message = 'Zmienna z componentu footer';
     this.eksport();
   }
   eksport() {
