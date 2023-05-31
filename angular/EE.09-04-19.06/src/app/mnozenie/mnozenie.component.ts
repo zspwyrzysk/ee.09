@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MnozenieComponent implements OnInit {
   @Input()
-  footer_message: string = "no message";
+  MyData = {message: "", status: 0};
   public constructor() {}
   
   

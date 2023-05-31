@@ -1,5 +1,5 @@
 import { Component, ChangeDetectorRef, AfterContentChecked } from '@angular/core';
-
+import { MnozenieComponent } from './mnozenie/mnozenie.component';
 
 @Component({
   selector: 'app-root',
@@ -9,21 +9,25 @@ import { Component, ChangeDetectorRef, AfterContentChecked } from '@angular/core
 export class AppComponent implements AfterContentChecked {
   title: string = 'EE.09-04-19.06';
   author = "John Doe";
-  footer_message: string = "No message";
+  MyData = { message: "", status: 0 };
   public constructor(private changeDetector: ChangeDetectorRef) {
 
   }
   //zmienna from child component footer
-  import(odebranaZmienna: string): void {
-    this.footer_message = odebranaZmienna;
-		//console.log(odebranaZmienna);
+  import(odebranaZmienna: { message: string; status: number; }): void {
+    this.MyData = odebranaZmienna;
+		//console.log(this.MyData);
 	}
+  
   ngAfterContentChecked(): void {
     this.changeDetector.detectChanges();
   }
   //zmienna z footer
-  onOutletLoaded(component: { footer_message: string; }) {
+  onOutletLoaded(component: { MyData: object; }) {
     console.log(component);
-    component.footer_message = this.footer_message;
+    if (component instanceof MnozenieComponent) {
+      component.MyData = this.MyData;
+    }
+    //component.footer_message = this.footer_message;
   }
 }

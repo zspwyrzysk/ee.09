@@ -21,7 +21,7 @@
         <li>dzielenie</li>
         <li>potęgowanie</li>
     </ul>
-    {{ constructor.name }}: {{ footer_message }}
+    {{ constructor.name }}: {{ MyData.message }} {{ MyData.status }}
   </section>
   <app-footer [author]="author" (zmiennaEksportujaca)="import($event)"></app-footer>
   

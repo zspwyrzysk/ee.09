@@ -1,4 +1,5 @@
 <section id="container-left">
+    {{ constructor.name }}
     <h3>Proste działania</h3>
     <form (ngSubmit)="onSubmit(form1)" #form1="ngForm">
         <label for="a">liczba A </label> <input type="number" id="a" name="a" ngModel required><br>
