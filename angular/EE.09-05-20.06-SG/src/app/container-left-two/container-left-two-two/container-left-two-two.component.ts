@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 export class ContainerLeftTwoTwoComponent implements OnInit {
   message = signal("");
   haircut_price: number = 0;
-  
+
   onSubmit(form1: NgForm) {
     switch(form1.value.promotion) {
       case 'k': this.haircut_price = 25; break;
