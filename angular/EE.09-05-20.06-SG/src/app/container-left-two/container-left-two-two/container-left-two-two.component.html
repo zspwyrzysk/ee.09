@@ -1,0 +1,13 @@
+<section id="content-left-two">
+    <h3>Dziś promocja na strzyżenie włosów</h3>
+    <form (ngSubmit)="onSubmit(form1)" #form1="ngForm">
+        <input type="radio" name="promotion" value="k" ngModel (click)="ClearMessage()"> Krótkie<br>
+        <input type="radio" name="promotion" value="s" ngModel (click)="ClearMessage()"> Średnie<br>
+        <input type="radio" name="promotion" value="p" ngModel (click)="ClearMessage()"> Półdługie<br>
+        <input type="radio" name="promotion" value="d" ngModel (click)="ClearMessage()"> Długie<br>
+        
+        <input type="submit" value="Odkryj promocje">
+    </form>
+    <!-- Wynik działania skryptu -->
+    {{ message() }}
+</section>

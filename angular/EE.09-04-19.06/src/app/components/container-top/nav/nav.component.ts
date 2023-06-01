@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { MnozenieComponent } from '../../container-left/mnozenie/mnozenie.component';
 import { DataConfig } from 'src/app/interfaces/data-config';
 
 //import '@cds/core/alert/register.js';
