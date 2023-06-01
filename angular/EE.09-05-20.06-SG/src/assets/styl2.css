@@ -1,0 +1,54 @@
+body {
+    font-family: Helvetica;
+}
+#content-left {
+    float: left;
+    width: 70%;
+}
+#content-right {
+    float: left;
+    width: 30%;
+}
+#content-left-one {
+    height: 400px;
+    background-color: snow;
+    text-align: center;
+}
+#content-left-two {
+    height: 400px;
+    background-color: snow;
+    font-size: 150%;
+}
+#content-right-one {
+    height: 150px;
+    background-color: steelblue;
+    color: white;
+}
+#content-right-two {
+    height: 350px;
+    background-color: steelblue;
+    color: white;
+}
+#content-right-three {
+    height: 300px;
+    background-color: show;
+    text-align: center;
+}
+#footer {
+    clear: both;
+    background-color: steelblue;
+    color: white;
+}
+h2 {
+    font-size: 250%;
+}
+img {
+    padding: 4px;
+}
+img:hover {
+    padding: 3px;
+    border: 1px solid steelblue;
+}
+ol {
+    margin-top: 0px
+}
