@@ -1,0 +1,43 @@
+body {
+	font-family: Helvetica;
+}
+
+#banner, #footer {
+	background-color: rgb(70, 130, 180);
+	color: white;
+	height: 30px;
+	text-align: center;
+	clear: both;	
+}
+#main {
+	background-color: rgb(176, 196, 222);
+	padding: 50px;
+	text-align: center;	
+}
+#banner_left {
+	background-color: rgb(70, 130, 180);
+	color: white;
+	height: 300px;
+	width: 80%;
+	float: left;	
+}
+#banner_right {
+	background-color: rgb(70, 130, 180);
+	color: white;
+	height: 300px;
+	width: 20%;
+	float: left;	
+}
+section#main img {
+	padding: 3 px;
+	border: 1px dashed blue;
+	border-radius: 10px;
+
+}
+section#banner_left img {
+	height: 40%;
+
+}
+section#banner_left img:hover {
+	border: 1px solid white;
+}
