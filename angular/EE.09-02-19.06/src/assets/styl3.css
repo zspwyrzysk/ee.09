@@ -1,0 +1,10 @@
+body {
+	font-family: Helvetica;
+}
+section#baner-lewy, section#lewy {
+	background-color: rgb(138, 69, 85);
+	color: white;
+	width: 30%;
+	height: 200px;
+	text-align: center; 
+}

@@ -1,0 +1,36 @@
+body {
+	font-family: Helvetica;
+}
+#banner-left, #container-left {
+	background-color: rgb(138, 69, 85);
+	color: white;
+	width: 30%;
+	height: 200px;
+	text-align: center;
+    float: left;
+}
+
+#banner-right, #container-right {
+	background-color: rgb(138, 69, 85);
+	color: white;
+	width: 70%;
+	height: 200px;
+	text-align: center;
+    float: left;
+}
+#main, #footer {
+    clear: both;
+    background-color: rgb(240, 234, 226);
+    padding: 120px;
+}
+table, td {
+    border: 1px solid rgb(130, 69, 85);
+    color: rgb(130, 69, 85);
+    padding: 10px;
+}
+a {
+    color: rgb(240, 234, 226);
+}
+/* Dla znacznika tabeli i komórki tabeli: obramowanie linią ciągłą o grubości 1 px i kolorze rgb 130, 69,
+85; kolor czcionki rgb 130, 69, 85; marginesy wewnętrzne 10 px
+ Dla znacznika odnośnika: kolor czcionki rgb 240, 234, 226 */

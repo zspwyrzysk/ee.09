@@ -1,0 +1,15 @@
+<section id="main">
+    <h3>Oblicz koszt paliwa</h3>
+    <form (ngSubmit)="onSubmit(form1)" #form1="ngForm">
+        <label>Rodzaj paliwa: (1-benzyna, 2-olej napędowy)</label>
+        <br>
+        <input type="number" name="typ_paliwa" id="typ-paliwa" ngModel required>
+        <br>
+        <label>Ile litrów</label>
+        <br>
+        <input type="number" name="ile_paliwa" id="ile-paliwa" ngModel required>
+        <br>
+        <input type="submit" value="Oblicz">
+    </form>
+    {{ message }}
+</section>
