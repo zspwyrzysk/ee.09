@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ObliczeniaComponent } from './obliczenia/obliczenia.component';
 import { MainComponent } from './main/main.component';
 
+import {provideClientHydration} from '@angular/platform-browser';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,7 @@ import { MainComponent } from './main/main.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ provideClientHydration() ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

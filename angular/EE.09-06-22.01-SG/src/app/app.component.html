@@ -2,29 +2,31 @@
   <h1>Konfigurator stylu</h1>
   <p>Podaj kolor tła</p>
   <form>
-    <input type="button" value="Indigo">
-    <input type="button" value="SteelBlue">
-    <input type="button" value="Olive">
+    <input type="button" value="Indigo" (click)="onChangeBackground('Indigo')">
+    <input type="button" value="SteelBlue" (click)="onChangeBackground('SteelBlue')">
+    <input type="button" value="Olive" (click)="onChangeBackground('Olive')">
   </form>
   <p>Podaj kolor czcionki</p>
-  <select name="">
-    <option value="0">White</option>
-    <option value="1">Tan</option>
-    <option value="2">Bisque</option>
-    <option value="3">Plum</option>
+  <select name="fontColor" (change)="onOptionChange($event)">
+    <option value="White">White</option>
+    <option value="Tan">Tan</option>
+    <option value="Bisque">Bisque</option>
+    <option value="Plum">Plum</option>
   </select>
   <p>Podaj rozmiar czcionki w procentach</p>
-  <input type="text" value="100%">
+  <input type="text" value="100%" (change)="onFontSizeChange($event)">
   <p>Czy rysunek ma mieć ramkę?</p>
-  <input type="checkbox" checked> Rysuj ramkę
+  <input type="checkbox" name="border" (click)="onDrawBorder($event)"> Rysuj ramkę
   <p>Jaki jest typ punktora listy?</p>
-  <input type="radio" name="punktory" value="dysk"> dysk<br>
-  <input type="radio" name="punktory" value="kwadrat"> kwadrat<br>
-  <input type="radio" name="punktory" value="okrąg"> okrąg <br>
+  <form name="form2">
+    <input type="radio" name="punktory" value="disc" (change)="onItemChange($event)"> dysk<br>
+    <input type="radio" name="punktory" value="square" (change)="onItemChange($event)"> kwadrat<br>
+    <input type="radio" name="punktory" value="circle" (change)="onItemChange($event)"> okrąg <br>
+  </form>
 </section>
-<section id="container-right">
-  <img src="../../assets/gibraltar.png" alt="półwysep Gibraltar">
-  <ul>
+<section id="container-right" [ngStyle]="{ 'background-color': bkColor, 'color': textColor, 'font-size': fontSize}">
+  <img [ngStyle]="{'border': borderImg}" src="../../assets/gibraltar.png" alt="półwysep Gibraltar">
+  <ul [ngStyle]="{ 'list-style-type': listStyleType }">
     <li>element 1</li>
     <li>element 2</li>
     <li>element 3</li>
