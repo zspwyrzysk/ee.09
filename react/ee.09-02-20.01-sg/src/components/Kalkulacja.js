@@ -5,16 +5,20 @@ function Kalkulacja() {
     let [message, setMessage] = useState("");
     let [liters, setLiters]  = useState({});;
     const [inputs, setInputs] = useState({});
+
     const handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
         setInputs(values => ({...values, [name]: value}))
-      }
+    }
+    
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(inputs);
-        liters = setLiters({liters: inputs.spalanie * inputs.dystans /100});
+        //liters = setLiters({liters: inputs.spalanie * inputs.dystans /100});
+        liters = setLiters(inputs.spalanie * inputs.dystans /100);
         message = setMessage(`Potrzebujesz: ${liters} litrów paliwa`);
+        console.log(inputs);
+        console.log(liters);
     }
     return (
     <>

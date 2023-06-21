@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
-import Kalkulacja from './components/Kalkulacja';
-import Main from './components/Main';
-import reportWebVitals from './reportWebVitals';
-
+import reportWebVitals from './reportWebVitals';  
+import RightTwoMain from './components/RightTwoMain';
+import RightTwoTwarz from './components/RightTwoTwarz';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,12 +13,11 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route path="/" element={<Main />} />
-          <Route path="kalkulacja" element={<Kalkulacja />} />
+          <Route path="/" element={<RightTwoMain />} />
+          <Route path="twarz" element={<RightTwoTwarz />} />
         </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );
-
 reportWebVitals();
